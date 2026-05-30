@@ -90,8 +90,8 @@ El sitio integra:
 
 ```bash
 # 1. Clonar el repositorio
-git clone https://github.com/hanssoto-cyber/django-l3.git
-cd django-l3
+git clone https://github.com/hanssoto-cyber/landing-django.git
+cd landing-django
 
 # 2. Crear y activar entorno virtual
 python -m venv venv
@@ -151,7 +151,7 @@ python -c "from django.core.management.utils import get_random_secret_key; print
 ## 📁 Estructura del proyecto
 
 ```
-django-l3/
+landing-django/
 ├── portafolio/              # Configuración del proyecto
 │   ├── settings.py
 │   ├── urls.py
