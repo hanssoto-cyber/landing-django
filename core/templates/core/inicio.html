@@ -36,7 +36,7 @@
 <!-- ===== STATS DASHBOARD ===== -->
 <section class="stats-grid">
     {% for stat in stats %}
-        <div class="stat-card" style="animation-delay: {{ forloop.counter0 }}00ms;">
+        <div class="stat-card">
             <div class="stat-valor">{{ stat.valor }}</div>
             <div class="stat-label">{{ stat.label }}</div>
         </div>
@@ -50,7 +50,7 @@
 
     <div class="competencias-grid">
         {% for comp in competencias %}
-            <div class="competencia-card" style="animation-delay: {{ forloop.counter0 }}50ms;">
+            <div class="competencia-card">
                 <div class="competencia-icono">{{ comp.icono }}</div>
                 <h3 class="competencia-titulo">{{ comp.titulo }}</h3>
                 <p class="competencia-desc">{{ comp.descripcion }}</p>
@@ -71,7 +71,7 @@
 
     <div class="stack-grid">
         {% for tech in stack %}
-            <div class="stack-item" style="animation-delay: {{ forloop.counter0 }}40ms;">
+            <div class="stack-item">
                 <span class="stack-icono">{{ tech.icono }}</span>
                 <span class="stack-nombre">{{ tech.nombre }}</span>
             </div>
