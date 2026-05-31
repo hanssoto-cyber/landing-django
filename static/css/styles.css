@@ -1195,3 +1195,29 @@ main {
         font-size: 0.6rem;
     }
 }
+.hero-actions {
+    margin: 1rem 0;
+}
+
+.btn-terminal {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1.2rem;
+    border: 1px solid var(--accent-primary);
+    border-radius: var(--radius-sm);
+    color: var(--accent-primary);
+    text-decoration: none;
+    font-family: inherit;
+    font-size: 0.9rem;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.btn-terminal:hover {
+    background-color: var(--accent-primary);
+    color: var(--bg-primary);
+}
+
+.btn-icon {
+    font-size: 1rem;
+}
