@@ -428,6 +428,15 @@ strong {
     transform: translateX(4px);
     background-color: var(--bg-tertiary);
 }
+.articulo-card img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: var(--radius);
+    margin-bottom: 1.2rem;
+    border: 1px solid var(--border-color);
+}
 
 .articulo-card h2 a {
     color: var(--text-primary);
