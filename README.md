@@ -208,8 +208,8 @@ Este fue mi primer proyecto Django, partiendo desde **cero conocimiento del fram
 - [x] Diseño responsive estilo terminal hacker
 - [x] Formulario de contacto con email
 - [x] Despliegue público con HTTPS
-- [ ] Página 404 personalizada (estilo "command not found")
-- [ ] Más artículos de blog técnico
+- [x] Página 404 personalizada (estilo "command not found")
+- [x] Más artículos de blog técnico
 - [ ] Modo claro/oscuro toggle
 - [ ] Integración con Google Analytics
 - [ ] SEO: sitemap, meta tags, Open Graph
