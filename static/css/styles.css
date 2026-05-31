@@ -583,26 +583,96 @@ strong {
 }
 
 /* ============================================================
-   12. FOOTER
+   FOOTER con redes sociales (mejorado)
    ============================================================ */
 footer {
     background-color: var(--bg-secondary);
     border-top: 1px solid var(--border-color);
-    padding: 2rem;
-    text-align: center;
+    padding: 3rem 2rem 2rem 2rem;
     margin-top: 4rem;
 }
 
-footer p {
-    color: var(--text-muted);
-    font-size: 0.85rem;
+.footer-content {
+    max-width: var(--container-max);
     margin: 0 auto;
-    max-width: 100%;
+    text-align: center;
 }
 
-footer p::before {
-    content: "// ";
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.7rem 1.2rem;
+    background-color: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: var(--transition);
+    font-family: var(--font-mono);
+}
+
+.social-link:hover {
+    border-color: var(--accent-primary);
     color: var(--accent-primary);
+    background-color: var(--bg-tertiary);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px var(--accent-glow);
+}
+
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    background-color: var(--accent-primary);
+    color: var(--bg-primary);
+    border-radius: var(--radius);
+    font-weight: 700;
+    font-size: 0.85rem;
+    transition: var(--transition);
+}
+
+.social-link:hover .social-icon {
+    background-color: var(--terminal-green);
+    transform: rotate(-5deg);
+}
+
+.social-label {
+    font-weight: 500;
+}
+
+.footer-copy {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+.footer-copy::before {
+    color: var(--accent-primary);
+    content: "";
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .footer-social {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .social-link {
+        justify-content: center;
+    }
 }
 
 /* ============================================================

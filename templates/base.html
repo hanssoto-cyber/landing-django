@@ -20,7 +20,23 @@
     </main>
     
     <footer>
-        <p>&copy; 2026 Hans Soto</p>
-    </footer>
+    <div class="footer-content">
+        <div class="footer-social">
+            <a href="{{ linkedin_url }}" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+                <span class="social-icon">in</span>
+                <span class="social-label">LinkedIn</span>
+            </a>
+            <a href="{{ github_url }}" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+                <span class="social-icon">{ }</span>
+                <span class="social-label">GitHub</span>
+            </a>
+            <a href="mailto:{{ email_contacto }}" class="social-link" aria-label="Email">
+                <span class="social-icon">@</span>
+                <span class="social-label">{{ email_contacto }}</span>
+            </a>
+        </div>
+        <p class="footer-copy">// &copy; 2026 {{ nombre_completo }} — Hecho con Django</p>
+    </div>
+</footer>
 </body>
 </html>

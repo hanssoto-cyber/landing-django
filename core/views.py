@@ -73,6 +73,7 @@ def inicio(request):
         'competencias': competencias,
         'stack': stack,
         'stats': stats,
+      
     }
     return render(request, 'core/inicio.html', contexto)
 
